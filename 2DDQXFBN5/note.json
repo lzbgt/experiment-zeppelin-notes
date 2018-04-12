@@ -1,0 +1,113 @@
+{
+  "paragraphs": [
+    {
+      "text": "%sh\npip install matplotlib sklearn nltk scipy wordcloud",
+      "user": "admin",
+      "dateUpdated": "Apr 12, 2018 11:55:46 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sh",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/sh"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1523496282379_-203182894",
+      "id": "20180412-092442_1272427819",
+      "dateCreated": "Apr 12, 2018 9:24:42 AM",
+      "dateStarted": "Apr 12, 2018 11:55:46 AM",
+      "dateFinished": "Apr 12, 2018 11:55:48 AM",
+      "status": "FINISHED",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%python\nimport numpy as np\n\nimport sys\nprint(sys.version_info)\n\nimport nltk\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nfrom sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.naive_bayes import MultinomialNB\nfrom wordcloud import WordCloud\n\nimport os\nprint(os.getcwd())\nos.chdir(os.getcwd()+\"/data\")\nprint(os.getcwd())",
+      "user": "admin",
+      "dateUpdated": "Apr 12, 2018 12:03:31 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/python",
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "sys.version_info(major\u003d3, minor\u003d6, micro\u003d1, releaselevel\u003d\u0027final\u0027, serial\u003d0)\n/opt/zeppelin-0.7.3-bin-all/data\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Traceback (most recent call last):\n  File \"/tmp/zeppelin_python-5833405683617380016.py\", line 271, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 14, in \u003cmodule\u003e\nFileNotFoundError: [Errno 2] No such file or directory: \u0027/opt/zeppelin-0.7.3-bin-all/data/data\u0027\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/tmp/zeppelin_python-5833405683617380016.py\", line 283, in \u003cmodule\u003e\n    raise Exception(traceback.format_exc())\nException: Traceback (most recent call last):\n  File \"/tmp/zeppelin_python-5833405683617380016.py\", line 271, in \u003cmodule\u003e\n    exec(code, _zcUserQueryNameSpace)\n  File \"\u003cstdin\u003e\", line 14, in \u003cmodule\u003e\nFileNotFoundError: [Errno 2] No such file or directory: \u0027/opt/zeppelin-0.7.3-bin-all/data/data\u0027\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1523494166350_1044724187",
+      "id": "20180412-084926_221495279",
+      "dateCreated": "Apr 12, 2018 8:49:26 AM",
+      "dateStarted": "Apr 12, 2018 12:03:31 PM",
+      "dateFinished": "Apr 12, 2018 12:03:31 PM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "admin",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1523494243074_1623325236",
+      "id": "20180412-085043_1223766282",
+      "dateCreated": "Apr 12, 2018 8:50:43 AM",
+      "status": "READY",
+      "errorMessage": "",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "test2.py",
+  "id": "2DDQXFBN5",
+  "angularObjects": {
+    "2D8R62MXM:shared_process": [],
+    "2DBDFBQR3:shared_process": [],
+    "2D9K5JWKP:shared_process": [],
+    "2DBEP7TK7:shared_process": [],
+    "2DA6FRUJW:shared_process": [],
+    "2D8UJGRNN:shared_process": [],
+    "2D9DHSEWB:shared_process": [],
+    "2DC1M613G:shared_process": [],
+    "2DAZFRFV1:shared_process": [],
+    "2DAAWAT3T:shared_process": [],
+    "2DAHNNSZ1:shared_process": [],
+    "2D8CDK7XJ:shared_process": [],
+    "2DAPY4T2F:shared_process": [],
+    "2D8YM4U3E:shared_process": [],
+    "2D84MWKNV:shared_process": [],
+    "2DBD7SVQN:shared_process": [],
+    "2DC281SJE:shared_process": [],
+    "2DBERZSZG:shared_process": [],
+    "2D9JU8ETA:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
